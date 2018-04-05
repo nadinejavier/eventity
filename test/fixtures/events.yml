@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  address: MyString
+  description: MyText
+  complete: false
+  hosted_by: 1
+  start_time: 2018-04-04 17:33:57
+  end_time: 2018-04-04 17:33:57
+
+two:
+  title: MyString
+  address: MyString
+  description: MyText
+  complete: false
+  hosted_by: 1
+  start_time: 2018-04-04 17:33:57
+  end_time: 2018-04-04 17:33:57
