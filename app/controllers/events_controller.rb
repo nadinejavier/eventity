@@ -1,4 +1,8 @@
 class EventsController < ApplicationController
+  def index
+    events = Event.all 
+    render json: events
+  end
   def create
     event = Event.new(
       title: params[:title],
