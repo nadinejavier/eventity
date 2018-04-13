@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   def index
     events = Event.all 
-    render json: events
+    render json: events.as_json
   end
   def create
     event = Event.new(
