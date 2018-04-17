@@ -19,4 +19,9 @@ class EventsController < ApplicationController
       render json: {errors: event.errors.full_messages}, status: :bad_request
     end
   end 
+
+  def show
+    event = Event.find(params[:id])
+    render json: event.as_json
+  end
 end

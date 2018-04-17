@@ -8,7 +8,8 @@ class Event < ApplicationRecord
       start_time: start_time,
       end_time: end_time,
       complete: complete,
-      hosted_by: hosted_by
+      hosted_by: hosted_by,
+      users: self.users.as_json
     }
   end 
 end

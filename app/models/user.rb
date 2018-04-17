@@ -9,7 +9,8 @@ class User < ApplicationRecord
       last_name: last_name,
       email: email,
       bio: bio,
-      location: location
+      location: location, 
+      events: self.events.as_json
     }
   end 
 end

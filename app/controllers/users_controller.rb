@@ -21,8 +21,7 @@ class UsersController < ApplicationController
     end
 
     def show
-      @user = User.find_by(id: params[:id].to_i(36))
-      @user_sent_invites = @user.invites
-      render json: @user, include: [:invites]
+      user = User.find(params[:id])
+      render json: user.as_json
     end
 end
